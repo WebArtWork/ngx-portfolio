@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import {
-	FormService
-} from 'src/app/modules/form/form.service';
-import { PortfolioService, Portfolio } from "src/app/core/services/portfolio.service";
+import {FormService} from 'src/app/modules/form/form.service';
+import { PortfolioService, Portfolio } from "src/app/modules/portfolio/services/portfolio.service";
 import { FormInterface } from 'src/app/modules/form/interfaces/form.interface';
 import { AlertService, CoreService, MongoService } from 'wacom';
 import { TranslateService } from 'src/app/modules/translate/translate.service';
@@ -88,11 +86,11 @@ export class PortfoliosComponent {
 				fields: [
 					{
 						name: 'Placeholder',
-						value: 'Select category'
+						value: 'Select tag'
 					},
 					{
 						name: 'Items',
-						value: this._ts.module['portfolio']
+						value: this._ts.group('portfolio')
 					}
 				]
 			}
