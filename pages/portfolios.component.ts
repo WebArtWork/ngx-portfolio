@@ -144,9 +144,5 @@ export class PortfoliosComponent {
 		private _form: FormService,
 		private _core: CoreService,
 		private _ts: TagService
-	) {
-		this._mongo.on('tag', () => {
-			this.form.components[this.form.components.length-1].fields[1].value = this._ts.module['portfolio'];
-		});
-	}
+	) {}
 }
