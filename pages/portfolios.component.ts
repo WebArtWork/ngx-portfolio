@@ -4,7 +4,7 @@ import { PortfolioService, Portfolio } from "src/app/modules/portfolio/services/
 import { FormInterface } from 'src/app/modules/form/interfaces/form.interface';
 import { AlertService, CoreService, MongoService } from 'wacom';
 import { TranslateService } from 'src/app/modules/translate/translate.service';
-import { TagService } from 'src/app/core/services/tag.service';
+import { TagService } from 'src/app/modules/tag/services/tag.service';
 
 @Component({
 	templateUrl: './portfolios.component.html',
