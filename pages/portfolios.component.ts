@@ -129,7 +129,20 @@ export class PortfoliosComponent {
 					}
 				]
 			});
-		}
+		},
+		buttons: [
+			{
+				icon: 'cloud_download',
+				click: (doc: Portfolio) => {
+					this._form
+						.modalUnique<Portfolio>(
+							'portfolio',
+							'url',
+							doc
+						);
+				}
+			}
+		]
 	};
 
 	get rows(): Portfolio[] {
