@@ -5,6 +5,7 @@ export interface Portfolio {
 	_id: string;
 	name: string;
 	description: string;
+	tags: string[];
 }
 
 @Injectable({
@@ -16,11 +17,7 @@ export class PortfolioService {
 	_portfolios: any = {};
 
 	new(): Portfolio {
-		return {
-			_id: '',
-			name: '',
-			description: ''
-		}
+		return {} as Portfolio;
 	}
 
 	constructor(

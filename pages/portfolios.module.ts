@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CoreModule } from 'src/app/core';
 import { PortfoliosComponent } from './portfolios.component';
 import { Routes, RouterModule } from '@angular/router';
+import { PortfoliosCreateComponent } from './portfolios/portfolios-create/portfolios-create.component';
 
 const routes: Routes = [{
 	path: '',
@@ -14,7 +15,8 @@ const routes: Routes = [{
 		CoreModule
 	],
 	declarations: [
-		PortfoliosComponent
+		PortfoliosComponent,
+  PortfoliosCreateComponent
 	],
 	providers: []
 
