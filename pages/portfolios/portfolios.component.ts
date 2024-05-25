@@ -5,9 +5,9 @@ import { FormInterface } from 'src/app/modules/form/interfaces/form.interface';
 import { AlertService, CoreService, ModalService, MongoService, StoreService } from 'wacom';
 import { TranslateService } from 'src/app/modules/translate/translate.service';
 import { Tag, TagService } from 'src/app/modules/tag/services/tag.service';
-import { Store, StoreService as _StoreService } from '../../store/services/store.service';
+import { Store, StoreService as _StoreService } from '../../../store/services/store.service';
 import { Router } from '@angular/router';
-import { PortfoliosCreateComponent } from './portfolios/portfolios-create/portfolios-create.component';
+import { PortfoliosCreateComponent } from './portfolios-create/portfolios-create.component';
 import { UserService } from 'src/app/core';
 
 @Component({
